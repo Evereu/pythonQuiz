@@ -1,0 +1,279 @@
+{
+  "categories": [
+    {
+      "categoryName": "stolice",
+      "id": 1,
+      "question": "Co jest stolicą Polski?",
+      "answers": [
+        { "option": "a", "text": "Warszawa", "correct": true },
+        { "option": "b", "text": "Kraków", "correct": false },
+        { "option": "c", "text": "Gdańsk", "correct": false },
+        { "option": "d", "text": "Wrocław", "correct": false }
+      ]
+    },
+    {
+    "categoryName": "stolice",
+    "id": 3,
+    "question": "Co jest stolicą Francji?",
+    "answers": [
+      {"option": "a", "text": "Paryż", "correct": true},
+      {"option": "b", "text": "Lyon", "correct": false},
+      {"option": "c", "text": "Marsylia", "correct": false},
+      {"option": "d", "text": "Bordeaux", "correct": false}
+    ]
+    },
+    {
+    "categoryName": "stolice",
+    "id": 4,
+    "question": "Co jest stolicą Hiszpanii?",
+    "answers": [
+      {"option": "a", "text": "Madryt", "correct": true},
+      {"option": "b", "text": "Barcelona", "correct": false},
+      {"option": "c", "text": "Walencja", "correct": false},
+      {"option": "d", "text": "Sewilla", "correct": false}
+    ]
+    },
+    {
+    "categoryName": "stolice",
+    "id": 5,
+    "question": "Co jest stolicą Wielkiej Brytanii?",
+    "answers": [
+      {"option": "a", "text": "Londyn", "correct": true},
+      {"option": "b", "text": "Manchester", "correct": false},
+      {"option": "c", "text": "Liverpool", "correct": false},
+      {"option": "d", "text": "Glasgow", "correct": false}
+    ]
+    },
+    {
+    "categoryName": "stolice",
+    "id": 6,
+    "question": "Co jest stolicą Niemiec?",
+    "answers": [
+      {"option": "a", "text": "Berlin", "correct": true},
+      {"option": "b", "text": "Monachium", "correct": false},
+      {"option": "c", "text": "Hamburg", "correct": false},
+      {"option": "d", "text": "Frankfurt", "correct": false}
+    ]
+    },
+    {
+      "categoryName": "chemia",
+      "id": 7,
+      "question": "Który z poniższych pierwiastków chemicznych jest gazem szlachetnym?",
+      "answers": [
+        { "option": "a", "text": "Hel", "correct": true },
+        { "option": "b", "text": "Wodór", "correct": false },
+        { "option": "c", "text": "Azot", "correct": false },
+        { "option": "d", "text": "Tlen", "correct": false }
+      ]
+    },
+  {
+    "categoryName": "chemia",
+    "id": 9,
+    "question": "Jaki jest symbol chemiczny tlenu?",
+    "answers": [
+      {"option": "a", "text": "O", "correct": true},
+      {"option": "b", "text": "Tl", "correct": false},
+      {"option": "c", "text": "Te", "correct": false},
+      {"option": "d", "text": "N", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "chemia",
+    "id": 10,
+    "question": "Który z poniższych pierwiastków chemicznych jest metalami ziem alkalicznych?",
+    "answers": [
+      {"option": "a", "text": "Sód", "correct": true},
+      {"option": "b", "text": "Potas", "correct": false},
+      {"option": "c", "text": "Wapń", "correct": false},
+      {"option": "d", "text": "Magnez", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "chemia",
+    "id": 11,
+    "question": "Ile protonów ma atom wodoru?",
+    "answers": [
+      {"option": "a", "text": "1", "correct": true},
+      {"option": "b", "text": "2", "correct": false},
+      {"option": "c", "text": "0", "correct": false},
+      {"option": "d", "text": "3", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "chemia",
+    "id": 12,
+    "question": "Jaki jest symbol chemiczny potasu?",
+    "answers": [
+      {"option": "a", "text": "K", "correct": true},
+      {"option": "b", "text": "P", "correct": false},
+      {"option": "c", "text": "Ks", "correct": false},
+      {"option": "d", "text": "Ka", "correct": false}
+    ]
+    },
+    {
+      "categoryName": "sztuka",
+      "id": 13,
+      "question": "Który malarz jest autorem obrazu 'Mona Lisa'?",
+      "answers": [
+        { "option": "a", "text": "Leonardo da Vinci", "correct": true },
+        { "option": "b", "text": "Vincent van Gogh", "correct": false },
+        { "option": "c", "text": "Pablo Picasso", "correct": false },
+        { "option": "d", "text": "Claude Monet", "correct": false }
+      ]
+    },
+  {
+    "categoryName": "sztuka",
+    "id": 15,
+    "question": "Kto namalował 'Nocną straż'?",
+    "answers": [
+      {"option": "a", "text": "Rembrandt", "correct": true},
+      {"option": "b", "text": "Michelangelo", "correct": false},
+      {"option": "c", "text": "Pierre-Auguste Renoir", "correct": false},
+      {"option": "d", "text": "Salvador Dalí", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "sztuka",
+    "id": 16,
+    "question": "Kto jest autorem rzeźby 'Dawid'?",
+    "answers": [
+      {"option": "a", "text": "Michelangelo", "correct": true},
+      {"option": "b", "text": "Leonardo da Vinci", "correct": false},
+      {"option": "c", "text": "Donatello", "correct": false},
+      {"option": "d", "text": "Bernini", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "sztuka",
+    "id": 17,
+    "question": "Kto jest autorem obrazu 'Gwiaździsta noc'?",
+    "answers": [
+      {"option": "a", "text": "Vincent van Gogh", "correct": true},
+      {"option": "b", "text": "Pablo Picasso", "correct": false},
+      {"option": "c", "text": "Leonardo da Vinci", "correct": false},
+      {"option": "d", "text": "Claude Monet", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "sztuka",
+    "id": 18,
+    "question": "Kto jest autorem rzeźby 'Pieta'?",
+    "answers": [
+      {"option": "a", "text": "Michelangelo", "correct": true},
+      {"option": "b", "text": "Donatello", "correct": false},
+      {"option": "c", "text": "Leonardo da Vinci", "correct": false},
+      {"option": "d", "text": "Bernini", "correct": false}
+    ]
+    },
+    {
+      "categoryName": "geografia",
+      "id": 19,
+      "question": "Jak nazywa się najwyższa góra na świecie?",
+      "answers": [
+        { "option": "a", "text": "Mount Everest", "correct": true },
+        { "option": "b", "text": "K2", "correct": false },
+        { "option": "c", "text": "Kilimandżaro", "correct": false },
+        { "option": "d", "text": "Denali", "correct": false }
+      ]
+    },
+  {
+    "categoryName": "geografia",
+    "id": 21,
+    "question": "Który z poniższych kontynentów ma największą powierzchnię?",
+    "answers": [
+      {"option": "a", "text": "Azja", "correct": true},
+      {"option": "b", "text": "Afryka", "correct": false},
+      {"option": "c", "text": "Ameryka Północna", "correct": false},
+      {"option": "d", "text": "Europa", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "geografia",
+    "id": 22,
+    "question": "Które z poniższych państw leży w Ameryce Południowej?",
+    "answers": [
+      {"option": "a", "text": "Brazylia", "correct": true},
+      {"option": "b", "text": "Egipt", "correct": false},
+      {"option": "c", "text": "Niemcy", "correct": false},
+      {"option": "d", "text": "Chiny", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "geografia",
+    "id": 23,
+    "question": "Który z poniższych państw nie graniczy z Polską?",
+    "answers": [
+      {"option": "a", "text": "Niemcy", "correct": true},
+      {"option": "b", "text": "Słowacja", "correct": false},
+      {"option": "c", "text": "Ukraina", "correct": false},
+      {"option": "d", "text": "Czechy", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "geografia",
+    "id": 24,
+    "question": "Które z poniższych państw leży w Afryce?",
+    "answers": [
+      {"option": "a", "text": "Nigeria", "correct": true},
+      {"option": "b", "text": "Kanada", "correct": false},
+      {"option": "c", "text": "Australia", "correct": false},
+      {"option": "d", "text": "Szwecja", "correct": false}
+    ]
+    },
+    {
+    "categoryName": "literatura",
+    "id": 25,
+    "question": "Kto napisał 'Pana Tadeusza'?",
+    "answers": [
+      {"option": "a", "text": "Adam Mickiewicz", "correct": true},
+      {"option": "b", "text": "Henryk Sienkiewicz", "correct": false},
+      {"option": "c", "text": "Juliusz Słowacki", "correct": false},
+      {"option": "d", "text": "Bolesław Prus", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "literatura",
+    "id": 26,
+    "question": "Kto jest autorem powieści 'Zbrodnia i kara'?",
+    "answers": [
+      {"option": "a", "text": "Fiodor Dostojewski", "correct": true},
+      {"option": "b", "text": "Leo Tolstoj", "correct": false},
+      {"option": "c", "text": "Franz Kafka", "correct": false},
+      {"option": "d", "text": "Marcel Proust", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "literatura",
+    "id": 27,
+    "question": "Która z poniższych książek jest autorstwa Williama Szekspira?",
+    "answers": [
+      {"option": "a", "text": "Romeo i Julia", "correct": true},
+      {"option": "b", "text": "Zbrodnia i kara", "correct": false},
+      {"option": "c", "text": "Stary człowiek i morze", "correct": false},
+      {"option": "d", "text": "Wichrowe wzgórza", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "literatura",
+    "id": 28,
+    "question": "Kto napisał 'Przygody Tomka Sawyera'?",
+    "answers": [
+      {"option": "a", "text": "Mark Twain", "correct": true},
+      {"option": "b", "text": "Charles Dickens", "correct": false},
+      {"option": "c", "text": "J.R.R. Tolkien", "correct": false},
+      {"option": "d", "text": "Lewis Carroll", "correct": false}
+    ]
+  },
+  {
+    "categoryName": "literatura",
+    "id": 29,
+    "question": "Kto jest autorem 'W pustyni i w puszczy'?",
+    "answers": [
+      {"option": "a", "text": "Henryk Sienkiewicz", "correct": true},
+      {"option": "b", "text": "Adam Mickiewicz", "correct": false},
+      {"option": "c", "text": "Juliusz Słowacki", "correct": false},
+      {"option": "d", "text": "Bolesław Prus", "correct": false}
+    ]
+  }
+  ]
+}
