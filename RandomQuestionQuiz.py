@@ -1,4 +1,5 @@
 import json
+import os
 import random
 from Models.AnswerModel import AnswerModel
 from Models.QuestionModel import QuestionModel
@@ -6,6 +7,7 @@ from Models.CategoryModel import CategoryModel
 
 
 class RandomQuestionQuiz:
+
     def get_all_questions_from_json(self):
 
         categoryyy = []
@@ -25,6 +27,20 @@ class RandomQuestionQuiz:
                 categoryyy.append(CategoryModel(category['categoryName'], quest))
 
         return categoryyy
+
+    def save_score(self, name, score):
+
+        with open('score.json', 'r') as file:
+            data = json.load(file)
+
+        print(data)
+
+        new_score = {"name": name, "points": score}
+        data.append(new_score)
+
+        with open('score.json', 'w') as file:
+            json.dump(data, file, indent=4)
+
 
     def play_quiz(self):
 
@@ -57,7 +73,11 @@ class RandomQuestionQuiz:
                 break
             all_questions.remove(random_category)
 
+
+        self.save_score("kot", points)
+
         print(f"Liczba punktów: {points}")
+
 
     def get_categories(self):
         all_questions = self.get_all_questions_from_json()

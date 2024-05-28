@@ -1,4 +1,6 @@
 import json
+import os
+import platform
 import random
 from Models.AnswerModel import AnswerModel
 from Models.QuestionModel import QuestionModel
@@ -28,6 +30,19 @@ class QuizByCategory:
 
         return categoryyy
 
+    def save_score(self, name, score):
+
+        with open('score.json', 'r') as file:
+            data = json.load(file)
+
+        print(data)
+
+        new_score = {"name": name, "points": score}
+        data.append(new_score)
+
+        with open('score.json', 'w') as file:
+            json.dump(data, file, indent=4)
+
     def play_quiz(self, selected_category):
 
         all_questions = self.get_all_questions_from_json(selected_category)
@@ -52,12 +67,16 @@ class QuizByCategory:
                             print("Poprawna odpowiedź")
                         else:
                             print("Niepoprawna odpowiedź.")
-                        break  # Zakończ pętlę for, gdy znajdziemy dopasowanie
+                        break
                 else:
                     print("Taka odpowiedz nie istnieje")
                     continue
                 break
             all_questions.remove(random_category)
 
+        self.save_score("kot", points)
+
         print(f"Liczba punktów: {points}")
+
+
 
