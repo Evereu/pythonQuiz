@@ -29,20 +29,19 @@ class RandomQuestionQuiz:
         return categoryyy
 
     def save_score(self, name, score):
-
-        with open('score.json', 'r') as file:
-            data = json.load(file)
-
-        print(data)
+        if os.path.exists('random-score.json') and os.path.getsize('random-score.json') > 0:
+            with open('random-score.json', 'r') as file:
+                data = json.load(file)
+        else:
+            data = []
 
         new_score = {"name": name, "points": score}
         data.append(new_score)
 
-        with open('score.json', 'w') as file:
+        with open('random-score.json', 'w') as file:
             json.dump(data, file, indent=4)
 
-
-    def play_quiz(self):
+    def play_quiz(self, player_name):
 
         all_questions = self.get_all_questions_from_json()
         points = 0
@@ -66,18 +65,16 @@ class RandomQuestionQuiz:
                             print("Poprawna odpowiedź")
                         else:
                             print("Niepoprawna odpowiedź.")
-                        break  # Zakończ pętlę for, gdy znajdziemy dopasowanie
+                        break
                 else:
                     print("Taka odpowiedz nie istnieje")
                     continue
                 break
             all_questions.remove(random_category)
 
-
-        self.save_score("kot", points)
+        self.save_score(str(player_name), points)
 
         print(f"Liczba punktów: {points}")
-
 
     def get_categories(self):
         all_questions = self.get_all_questions_from_json()

@@ -1,8 +1,38 @@
+import json
+import os
+
 from RandomQuestionQuiz import RandomQuestionQuiz
 from CategoryQuestions import QuizByCategory
 
 quiz_category = QuizByCategory()
 quiz_random = RandomQuestionQuiz()
+
+
+def print_score(score_type):
+    if score_type == "random":
+        file = "random-score.json"
+        read_score(file)
+    elif score_type == "category":
+        file = "category-score.json"
+        read_score(file)
+    else:
+        print("Taki ranking nie istnieje")
+
+
+def read_score(file):
+    if os.path.exists(file):
+        if os.path.getsize(file) > 0:
+            with open(file, 'r') as file:
+                data = json.load(file)
+                for player in data:
+                    print(f"Imie: {player['name']}")
+                    print(f"Punkty: {player['points']}")
+                    print()
+        else:
+            print("Brak wyników do wyświetlenia")
+    else:
+        print("Plik z punktami nie istnieje")
+
 
 while True:
     print("1 - Pytania z danej kategorii")
@@ -21,12 +51,18 @@ while True:
     if value == 1:
         quiz_random.get_categories()
         category = input("Wprowadź nazwę kategorii: ")
-        quiz_category.play_quiz(category.lower())
+        player_name = input("Podaj swój nick")
+        quiz_category.play_quiz(category.lower(), player_name)
     elif value == 2:
-        quiz_random.play_quiz()
+        player_name = input("Podaj swój nick")
+        quiz_random.play_quiz(player_name)
     elif value == 3:
-        print("das")
+        print("random - Ranking losowej kategorii")
+        print("category - Ranking gry w kategoriach")
 
+        value = input("Podaj kategorie rankingu ktora cie interesuje: \n").lower().strip()
+
+        print_score(value)
     elif value == 4:
         print("Dziękujemy za grę!")
         break
